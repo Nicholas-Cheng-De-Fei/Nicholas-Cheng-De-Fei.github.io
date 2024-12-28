@@ -1,0 +1,101 @@
+/* Custom font quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
+* {
+    font-family: Quicksand;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,#FFECD2 , #FCB69F);
+}
+
+.text-name {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.short-introduction {
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.center-container {
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 100vw;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 1.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
